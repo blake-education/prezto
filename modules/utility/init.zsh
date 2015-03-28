@@ -11,7 +11,7 @@
 pmodload 'helper' 'spectrum'
 
 # Correct commands.
-setopt CORRECT
+# setopt CORRECT
 
 #
 # Aliases
