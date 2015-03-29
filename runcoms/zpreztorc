@@ -1,5 +1,4 @@
-#
-# Sets Prezto options.
+# # Sets Prezto options.
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
@@ -34,7 +33,8 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'prompt' \
   'history-substring-search' \
-  'ruby'
+  'ruby' \
+  'personal'
 
 #
 # Editor
