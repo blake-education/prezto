@@ -38,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'homebrew' \
   'osx' \
+  'blake' \
   'archive'
 
 #
