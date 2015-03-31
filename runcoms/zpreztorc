@@ -34,7 +34,11 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'prompt' \
   'history-substring-search' \
-  'ruby'
+  'ruby' \
+  'git' \
+  'homebrew' \
+  'osx' \
+  'archive'
 
 #
 # Editor
