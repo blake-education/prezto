@@ -38,7 +38,8 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'osx' \
   'archive' \
-  'personal'
+  'personal' \
+  'blake'
 
 #
 # Editor
