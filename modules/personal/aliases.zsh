@@ -8,7 +8,6 @@ alias f="noglob f"
 
 alias dl="curl -L -O"
 
-alias d="sudo docker"
 
 function naut () {
   local DIR="${1-.}"
@@ -19,3 +18,9 @@ alias apt-get="sudo apt-get"
 alias aptitude="sudo aptitude"
 alias apts="aptitude search"
 alias apti="apt-get install"
+
+# docker
+alias d="docker"
+alias dockerenv='eval $(boot2docker shellinit)'
+
+alias be="bundle exec"
