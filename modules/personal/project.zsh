@@ -75,10 +75,9 @@ project_path() {
 
 project_search() {
   if [[ $1 ]]; then
-
-    read_projects | cut -d, -f1 | command grep "^$1"
+    reply=( $(read_projects | cut -d, -f1 | command grep "^$1") )
   else
-    read_projects | cut -d, -f1
+    reply=( $(read_projects | cut -d, -f1 ) )
   fi
 }
 
