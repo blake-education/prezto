@@ -7,13 +7,9 @@ compdef _git gf=git-fetch
 alias ga="git add"
 alias gap="git add -p"
 
-if [ -x '/usr/local/bin/gitx' ]; then
-  alias gx='gitx'
-else
-  function gx() {
-    gitk --all $* &
-  }
-fi
+function gx() {
+  gitk --all $* &
+}
 alias gd='git diff'
 
 alias gcola='git cola &'
@@ -30,6 +26,13 @@ function grh() {
   local branch
   branch=${1-HEAD}
   git reset --hard $branch
+}
+
+function bclone() {
+  cd ~/Blake
+  git clone git@github.com:blake-education/$1.git
+  cd $1
+  add_project
 }
 
 alias gcot='git checkout -t'
