@@ -19,8 +19,13 @@ alias aptitude="sudo aptitude"
 alias apts="aptitude search"
 alias apti="apt-get install"
 
-# docker
-alias d="docker"
-alias dockerenv='eval $(boot2docker shellinit)'
-
 alias be="bundle exec"
+
+#function fgem() {
+  #local p="$1"
+  #echo $(bundle show "$p") || $(dirname $(gem which $p))
+#}
+
+function cdgem() {
+  cd "$(bundle show "$1")"
+}
