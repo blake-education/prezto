@@ -13,3 +13,8 @@ fi
 export EDITOR=vim
 export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/
 export PATH=$JAVA_HOME/bin:$PATH
+
+. $HOME/.nix-profile/etc/profile.d/nix.sh
+export NIX_PATH=nixpkgs=$HOME/nix/nixpkgs
+
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
