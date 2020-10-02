@@ -6,7 +6,9 @@
 #
 
 # Load RVM into the shell session.
-if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
+if [[ ! -z "$ASDF_DIR" && -d "$ASDF_DIR/plugins/ruby" ]]; then
+  # nothing necessary for asdf <3
+elif [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
   # Unset AUTO_NAME_DIRS since auto adding variable-stored paths to ~ list
   # conflicts with RVM.
   unsetopt AUTO_NAME_DIRS
