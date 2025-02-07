@@ -5,11 +5,7 @@
 # Authors: Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Load RVM into the shell session.
-if [[ ! -z "$ASDF_DIR" && -d "$ASDF_DIR/plugins/ruby" || -d "$HOME/.asdf/plugins/ruby" ]]; then
-  # nothing necessary for asdf <3
-
-elif [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
+if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
   # Unset AUTO_NAME_DIRS since auto adding variable-stored paths to ~ list
   # conflicts with RVM.
   unsetopt AUTO_NAME_DIRS
