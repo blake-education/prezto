@@ -13,5 +13,23 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="$HOME/.asdf/shims:$PATH"
+if [[ -d "/opt/homebrew/bin" ]]; then
+  export PATH="/opt/homebrew/bin:$PATH"
+fi
+
+if [[ -d "$HOME/.asdf/shims" ]]; then
+  export PATH="$HOME/.asdf/shims:$PATH"
+fi
+
+if [[ -d "$HOME/Blake/bx/bin" ]]; then
+  export PATH="$HOME/Blake/bx/bin:${PATH}"
+fi
+
+if [[ -d "$HOME/Blake/bk8s/bin" ]]; then
+  export PATH="$HOME/Blake/bk8s/bin:${PATH}"
+  source <(bk8s completion zsh)
+fi
+
+if [[ -d "$HOME/Blake/bp/bin" ]]; then
+  export PATH="$HOME/Blake/bp/bin:${PATH}"
+fi
